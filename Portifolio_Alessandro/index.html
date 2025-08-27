@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <!-- Header -->
+
+
+    <div class="bg-gray-900">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="#" class="text-sm/6 font-semibold text-white">Sobre mim</a>
+                    <a href="#" class="text-sm/6 font-semibold text-white">Projetos</a>
+                    <a href="#" class="text-sm/6 font-semibold text-white">Contato</a>
+                    <!--<a href="#" class="text-sm/6 font-semibold text-white">Trajetori</a>-->
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="text-sm/6 font-semibold text-white">
+                    </a>
+                </div>
+            </nav>
+
+            <el-dialog>
+                <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                    <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                        <el-dialog-panel
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-white/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Sobre
+                                            mim</a>
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Projetos</a>
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contato</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </el-dialog-panel>
+                    </div>
+                </dialog>
+            </el-dialog>
+        </header>
+
+
+
+        <!-- espaço -->
+
+        <div class="bg-gray-900">
+            <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+                <div
+                    class="relative isolate overflow-hidden bg-gray-800 px-6 pt-16 after:pointer-events-none after:absolute after:inset-0 after:inset-ring after:inset-ring-white/10 sm:rounded-3xl sm:px-16 after:sm:rounded-3xl md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                    <svg viewBox="0 0 1024 1024" aria-hidden="true"
+                        class="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0">
+                        <circle r="512" cx="512" cy="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+                            fill-opacity="0.7" />
+                        <defs>
+                            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                                <stop stop-color="#7775D6" />
+                                <stop offset="1" stop-color="#E935C1" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+
+                    <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                        <h2 class="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">Leo Vidal
+                            Dantas
+                        </h2>
+                        <p class="mt-6 text-lg/8 text-pretty text-gray-300">Pronto para entregar soluções digitais de
+                            qualidade, unindo técnica, criatividade e foco no usuário final.</p>
+                    </div>
+                    <div class="relative mt-10 pl-4 sm:pl-12 md:pl-24 lg:pl-60 flex justify-center sm:justify-start">
+                        <img src="Foto de perfil.webp" alt="Foto de perfil"
+                            class="w-48 h-48 sm:w-60 sm:h-60 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Sobre mim -->
+
+        <section>
+
+            <div class="relative isolate overflow-hidden bg-white py-24 sm:py-32">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=screen"
+                    alt="Foto ilustrativa de programador"
+                    class="absolute inset-0 -z-10 size-full object-cover object-right opacity-10 md:object-center" />
+
+                <!-- Efeitos de background -->
+                <div aria-hidden="true"
+                    class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
+                    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                        class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-15"></div>
+                </div>
+                <div aria-hidden="true"
+                    class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:-top-112 sm:ml-16 sm:translate-x-0">
+                    <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                        class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-15"></div>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div class="mx-auto max-w-2xl lg:mx-0">
+                        <h2 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Sobre mim</h2>
+                        <p class="mt-8 text-lg font-medium text-pretty text-gray-700 sm:text-xl/8">
+                            Meu nome é <strong>Leo Vidal</strong>, tenho 32 anos e sou <strong>programador
+                                frontend</strong> com mais de 9 anos de experiência criando interfaces modernas e
+                            funcionais.
+                            Minha paixão é transformar ideias em produtos digitais intuitivos, unindo design e
+                            tecnologia para oferecer a melhor experiência ao usuário.
+                            Curioso e autodidata, estou sempre buscando novas ferramentas e tendências para evoluir como
+                            desenvolvedor.
+                        </p>
+                    </div>
+
+                    <!-- Métricas -->
+                    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                            <div class="flex flex-col-reverse gap-1">
+                                <dt class="text-base/7 text-gray-700">Projetos entregues</dt>
+                                <dd class="text-4xl font-semibold tracking-tight text-gray-900">85+</dd>
+                            </div>
+                            <div class="flex flex-col-reverse gap-1">
+                                <dt class="text-base/7 text-gray-700">Anos de experiência</dt>
+                                <dd class="text-4xl font-semibold tracking-tight text-gray-900">9</dd>
+                            </div>
+                            <div class="flex flex-col-reverse gap-1">
+                                <dt class="text-base/7 text-gray-700">Tecnologias dominadas</dt>
+                                <dd class="text-4xl font-semibold tracking-tight text-gray-900">12+</dd>
+                            </div>
+                            <div class="flex flex-col-reverse gap-1">
+                                <dt class="text-base/7 text-gray-700">Clientes satisfeitos</dt>
+                                <dd class="text-4xl font-semibold tracking-tight text-gray-900">50+</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
 </body>
+
 </html>
